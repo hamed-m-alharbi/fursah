@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="960" height="360" rx="16" fill="#0B1512"/>
+  <text x="40" y="48" font-size="22" font-weight="700" fill="#86EFAC">From raw text to a trusted store</text>
+  <text x="40" y="74" font-size="14" fill="#9CB8AA">Only facts backed by an exact quote are published</text>
+
+  <g font-size="14">
+    <rect x="40" y="104" width="880" height="48" rx="8" fill="#13211C" stroke="#15803D"/>
+    <text x="60" y="134" fill="#E6F4EC" font-weight="700">1,000</text>
+    <text x="130" y="134" fill="#C8DDD2">raw announcements, all extracted and checked by the evidence gate</text>
+
+    <rect x="40" y="166" width="301" height="48" rx="8" fill="#15803D" opacity="0.8"/>
+    <text x="60" y="196" fill="#E6F4EC" font-weight="700">341</text>
+    <text x="360" y="196" fill="#C8DDD2">source announcements published</text>
+
+    <rect x="40" y="228" width="280" height="48" rx="8" fill="#4ADE80"/>
+    <text x="60" y="258" fill="#0B1512" font-weight="700">318</text>
+    <text x="340" y="258" fill="#C8DDD2">opportunities (24 merged from updates, reposts, reminders)</text>
+  </g>
+  <text x="40" y="316" font-size="12" fill="#9CB8AA">Not published by design: ~480 expired, ended, closed, cancelled or not yet open · 129 held for human review · 8 paid failures never retried</text>
+</svg>
