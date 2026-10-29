@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4ADE80"/>
+    </marker>
+  </defs>
+  <rect width="960" height="520" rx="16" fill="#0B1512"/>
+  <text x="40" y="48" font-size="22" font-weight="700" fill="#86EFAC">FURSAH · How it works</text>
+  <text x="40" y="74" font-size="14" fill="#9CB8AA">Offline data pipeline (top) feeds the online search agent (bottom)</text>
+
+  <text x="40" y="118" font-size="12" font-weight="700" fill="#4ADE80" letter-spacing="2">OFFLINE · DATA PIPELINE</text>
+  <g font-size="13" fill="#E6F4EC">
+    <rect x="40" y="132" width="150" height="74" rx="10" fill="#13211C" stroke="#15803D"/>
+    <text x="115" y="164" text-anchor="middle" font-weight="700">1,000 raw</text>
+    <text x="115" y="184" text-anchor="middle" fill="#9CB8AA">Arabic announcements</text>
+
+    <rect x="220" y="132" width="150" height="74" rx="10" fill="#13211C" stroke="#15803D"/>
+    <text x="295" y="164" text-anchor="middle" font-weight="700">LLM extraction</text>
+    <text x="295" y="184" text-anchor="middle" fill="#9CB8AA">resumable batches</text>
+
+    <rect x="400" y="132" width="150" height="74" rx="10" fill="#13211C" stroke="#16A34A" stroke-width="2"/>
+    <text x="475" y="164" text-anchor="middle" font-weight="700">Evidence gate</text>
+    <text x="475" y="184" text-anchor="middle" fill="#9CB8AA">exact quote per fact</text>
+
+    <rect x="580" y="132" width="150" height="74" rx="10" fill="#13211C" stroke="#15803D"/>
+    <text x="655" y="164" text-anchor="middle" font-weight="700">Review + approval</text>
+    <text x="655" y="184" text-anchor="middle" fill="#9CB8AA">groups, corrections</text>
+
+    <rect x="760" y="132" width="160" height="74" rx="10" fill="#15803D"/>
+    <text x="840" y="164" text-anchor="middle" font-weight="700" fill="#0B1512">SQLite store</text>
+    <text x="840" y="184" text-anchor="middle" fill="#0B1512">318 opportunities</text>
+  </g>
+  <g stroke="#4ADE80" stroke-width="2" marker-end="url(#a)">
+    <line x1="190" y1="169" x2="216" y2="169"/>
+    <line x1="370" y1="169" x2="396" y2="169"/>
+    <line x1="550" y1="169" x2="576" y2="169"/>
+    <line x1="730" y1="169" x2="756" y2="169"/>
+  </g>
+  <text x="475" y="228" text-anchor="middle" font-size="12" fill="#9CB8AA">unsupported facts stay "unknown", never invented</text>
+
+  <path d="M840 206 V 300" stroke="#4ADE80" stroke-width="2" fill="none" stroke-dasharray="5 5" marker-end="url(#a)"/>
+
+  <text x="40" y="290" font-size="12" font-weight="700" fill="#4ADE80" letter-spacing="2">ONLINE · PER SEARCH REQUEST</text>
+  <g font-size="13" fill="#E6F4EC">
+    <rect x="40" y="304" width="150" height="74" rx="10" fill="#13211C" stroke="#15803D"/>
+    <text x="115" y="336" text-anchor="middle" font-weight="700">React UI</text>
+    <text x="115" y="356" text-anchor="middle" fill="#9CB8AA">profile + free text</text>
+
+    <rect x="220" y="304" width="150" height="74" rx="10" fill="#13211C" stroke="#15803D"/>
+    <text x="295" y="336" text-anchor="middle" font-weight="700">Input parsing</text>
+    <text x="295" y="356" text-anchor="middle" fill="#9CB8AA">city, type, dates</text>
+
+    <rect x="400" y="304" width="150" height="74" rx="10" fill="#13211C" stroke="#16A34A" stroke-width="2"/>
+    <text x="475" y="336" text-anchor="middle" font-weight="700">Search + rules</text>
+    <text x="475" y="356" text-anchor="middle" fill="#9CB8AA">deadline, city, status</text>
+
+    <rect x="580" y="304" width="150" height="74" rx="10" fill="#13211C" stroke="#15803D"/>
+    <text x="655" y="336" text-anchor="middle" font-weight="700">Agent shortlist</text>
+    <text x="655" y="356" text-anchor="middle" fill="#9CB8AA">up to 10, grounded</text>
+
+    <rect x="760" y="304" width="160" height="74" rx="10" fill="#13211C" stroke="#15803D"/>
+    <text x="840" y="336" text-anchor="middle" font-weight="700">Rerank + explain</text>
+    <text x="840" y="356" text-anchor="middle" fill="#9CB8AA">reasons from the record</text>
+  </g>
+  <g stroke="#4ADE80" stroke-width="2" marker-end="url(#a)">
+    <line x1="190" y1="341" x2="216" y2="341"/>
+    <line x1="370" y1="341" x2="396" y2="341"/>
+    <line x1="550" y1="341" x2="576" y2="341"/>
+    <line x1="730" y1="341" x2="756" y2="341"/>
+  </g>
+  <path d="M840 378 V 420 H 115 V 382" stroke="#4ADE80" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="478" y="412" text-anchor="middle" font-size="12" fill="#9CB8AA">results · needs more info · no match · controlled error</text>
+
+  <text x="40" y="478" font-size="12" fill="#9CB8AA">FastAPI · Pydantic v2 · SQLite · OpenAI SDK via OpenRouter · Arize Phoenix tracing · React + TypeScript · Docker</text>
+</svg>
